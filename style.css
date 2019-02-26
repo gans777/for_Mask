@@ -29,6 +29,8 @@ a {
 .header {
 	height: 100px;
 	margin-top: 0;
+	
+	position: relative;
 }
 .header .logo {
 	width: 316px;
@@ -100,8 +102,8 @@ a {
 	margin-left: 30px;
 
 }
-.menu li:hover,
-.menu_small li:hover {
+.menu li:hover
+ {
 	border-bottom:1px solid #3d3d3d;
 } 
 
@@ -355,6 +357,10 @@ a {
 }
 
 @media screen and (max-width: 986px) {
+	.menu ul {
+	
+	display: flex;
+}
 
 	.wrap_middle{
 	width: 100%;
@@ -383,11 +389,30 @@ a {
 	width: 100%;
 }
 .header{
-	
+	z-index: 10;
 }
 .menu {
           display: none;
+        position: absolute;
+        bottom: 0px;
+        right: 20%;
+	    top:0;
           }
+ .menu ul {
+ 	display: block;
+ 	background-image: linear-gradient(to bottom right,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.9)); 
+ 	text-align: center;
+ 	
+ } 
+ .menu li {
+ 	padding-right:  40px;
+ 	padding-left: -15px;
+    }   
+  .menu li:last-child {
+   	
+   	padding-bottom: 20px;
+   }
+    
 .menu_small{
 	display: block;
 	position: relative;

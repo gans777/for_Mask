@@ -1,5 +1,5 @@
 var element=document.querySelector('.menu_small');
-var menu=document.querySelector('.menu_small>ul');
+var menu=document.querySelector('.menu');
  var count=true;
  element.addEventListener('click', function(){
  	
